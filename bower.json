@@ -1,0 +1,31 @@
+{
+  "name": "my-web-service",
+  "description": "A simple REST web service in php",
+  "main": "webService.php",
+  "authors": [
+    "@lidia_defreitas"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "service",
+    "REST",
+    "Slim",
+    "Framework"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/lidia-freitas/myWebService#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "~3.0.3",
+    "bootstrap-css": "~3.3.4"
+  }
+}
