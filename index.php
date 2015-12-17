@@ -18,7 +18,7 @@
     }
 
     function getProducts(){
-        $getData = "select * from `products`";
+        $getData = "SELECT * FROM `products`";
         $query = getConnection()->query($getData);
 
         while($row = mysqli_fetch_assoc($query)){
