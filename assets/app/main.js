@@ -2,7 +2,7 @@
 
 function addProduct() {
     $('#success').empty();
-    var postRoute = 'http://localhost:8000/productAdd';
+    var postRoute = 'http://localhost:8000/productAdd'; //add your server URL here
     $.ajax({
         type: 'POST',
         contentType: 'application/json',

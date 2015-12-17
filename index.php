@@ -13,11 +13,12 @@
     $app->run();
 
     function getConnection() {
-        $connection = new mysqli("localhost", "root", "senha254631", "go_table") or die(mysqli_error());
+        $connection = new mysqli("set_your_host", "set_your_db_username", "set_your_db_password", "set_your_db_name") or die(mysqli_error());
         return $connection;
     }
 
     function getProducts(){
+        //set your table below
         $getData = "SELECT * FROM `products`";
         $query = getConnection()->query($getData);
 
@@ -55,6 +56,7 @@
             $price = $allPostVars['price'];
             $inclusion = $allPostVars['inclusion'];
 
+            //set your table and fields below
             $setData = "INSERT INTO `products` (`name`, `price`, `inclusion`) VALUES ('$name', '$price', '$inclusion')";
             $query = getConnection()->query($setData);
 
