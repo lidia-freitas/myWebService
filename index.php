@@ -18,7 +18,7 @@
     }
 
     function getProducts(){
-        $getData = "select * from `produtos`";
+        $getData = "select * from `products`";
         $query = getConnection()->query($getData);
 
         while($row = mysqli_fetch_assoc($query)){
@@ -55,7 +55,7 @@
             $price = $allPostVars['price'];
             $inclusion = $allPostVars['inclusion'];
 
-            $setData = "INSERT INTO `produtos` (`nome`, `preco`, `inclusao`) VALUES ('$name', '$price', '$inclusion')";
+            $setData = "INSERT INTO `products` (`name`, `price`, `inclusion`) VALUES ('$name', '$price', '$inclusion')";
             $query = getConnection()->query($setData);
 
             if ($query) {

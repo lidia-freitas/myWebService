@@ -1,6 +1,7 @@
 'use strict';
 
 function addProduct() {
+    $('#success').empty();
     var postRoute = 'http://localhost:8000/productAdd';
     $.ajax({
         type: 'POST',
